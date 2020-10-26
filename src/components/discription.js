@@ -1,8 +1,9 @@
-import React  from 'react'
+import React from 'react'
+import ScilsSlider from './discription/skilsSlider'
 
 const Discription = () => {
   return (
-    <div> Discription </div>
+    <ScilsSlider />
   )
 }
 export default Discription
