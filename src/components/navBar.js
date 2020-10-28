@@ -1,32 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "./../assets/images/logo.png";
 
 const NavBar = () => {
+  const [onNavBar, setNavBar] = useState(0)
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setNavBar(window.pageYOffset)
+    })
+  },[])
+
+  console.log(onNavBar > 200);
   return (
     <div>
-      <nav className={`${onNavbar}`}>
+      <nav className={`${onNavBar > 200 ? "on-navbar" : ""}`}>
         <div className="container">
           <div className="logo">
-            <a href="#">
+            <Link to="./">
               <img src={logo} alt="Logo" />
-            </a>
+            </Link>
           </div>
           <div>
             <ul className="nav-menu">
               <li>
-                <a href="#">home</a>
+                <Link to="/hj">home</Link>
               </li>
               <li>
-                <a href="#">about</a>
+                <Link to="./#">about</Link>
               </li>
               <li>
-                <a href="#">portfolio</a>
+                <Link to="./#">portfolio</Link>
               </li>
               <li>
-                <a href="#">blog</a>
+                <Link to="./#">blog</Link>
               </li>
               <li>
-                <a href="#">contact</a>
+                <Link to="./#">contact</Link>
               </li>
             </ul>
           </div>
