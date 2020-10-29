@@ -1,10 +1,22 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 $decoration: #f56565;
 $mainColor: #292929;
+$textColor: #999999;
 
+body{
+  font-family: 'Playfair Display', serif;
+}
+
+.container {
+  max-width: 1130px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
 
 @import 'contact-form.scss';
-@import 'discription.scss';
+@import 'about.scss';
 @import 'footer.scss';
 @import 'main-screen.scss';
 @import 'nav-bar.scss';

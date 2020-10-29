@@ -27,8 +27,6 @@ const ScilsSlider = () => {
             numberOfCards={matches.small ? 1 : matches.medium ? 3 : matches.large ? 5 : 5}
             infiniteLoop
             gutter={20}
-            leftChevron={<button>{'<'}</button>}
-            rightChevron={<button>{'>'}</button>}
             chevronWidth={chevronWidth}
           >
             {dataForSkilsSlider.map(it => {
