@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
-@import "./nav-bar.scss";
+$decoration: #f56565;
+$mainColor: #292929;
+
+@import "./nav-bar.scss", './discription.scss';
 
 @media (min-width: 992px) {
   .container {
