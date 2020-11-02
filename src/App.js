@@ -1,15 +1,19 @@
 import React from 'react'
-import "./assets/style/style.scss";
-import NavBar from './components/navBar';
-import Discription from './components/discription'
+import './assets/style/style.scss'
+import About from './components/about/about.js';
+import MainScreen from './components/mainScreen.js';
+// import Footer from './components/footer.js';
+// import MainScreen from './components/mainScreen.js';
+import NavBar from './components/navBar.js';
 
 function App() {
   return (
-    <div>
-        <NavBar />
-        <Discription/>
-    </div>
-  );
+    <>
+      <NavBar />
+      <MainScreen/>
+      <About />
+    </>
+  )
 }
 
-export default App;
+export default App

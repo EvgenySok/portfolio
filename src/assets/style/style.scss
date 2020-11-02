@@ -2,12 +2,9 @@
 ::after,
 ::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-$decoration: #f56565;
-$mainColor: #292929;
-
-@import "./nav-bar.scss", './discription.scss';
 
 @media (min-width: 992px) {
   .container {
@@ -26,11 +23,21 @@ $mainColor: #292929;
   }
 }
 
-.container {
-  max-width: 1090px;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+$decoration: #f56565;
+$mainColor: #292929;
+$textColor: #999999;
+
+body{
+  font-family: 'Playfair Display', serif;
 }
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+@import 'about.scss';
+@import 'nav-bar.scss';
+@import 'main-screen.scss'
