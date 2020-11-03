@@ -1,7 +1,8 @@
-import ContactForm from './components/contactForm.js';
+import React from 'react'
+import './assets/style/style.scss'
 import About from './components/about/about.js';
-import Footer from './components/footer.js';
 import MainScreen from './components/mainScreen.js';
+// import Footer from './components/footer.js';
 import NavBar from './components/navBar.js';
 import Portfolio from './components/portfolio/portfolio.js';
 
@@ -9,11 +10,11 @@ function App() {
   return (
     <>
       <NavBar />
-      <MainScreen />
+      <MainScreen/>
       <About />
       <Portfolio />
-      <ContactForm />
-      <Footer />
+      {/* <ContactForm /> */}
+      {/* <Footer /> */}
     </>
   )
 }

@@ -11,13 +11,14 @@ body{
 
 .container {
   max-width: 1130px;
-  padding: 0px 15px;
   margin: 0 auto;
 }
 
-@import 'contact-form.scss';
 @import 'about.scss';
-@import 'portfolio.scss';
-@import 'footer.scss';
+@import 'contact-form.scss';
 @import 'main-screen.scss';
 @import 'nav-bar.scss';
+@import 'portfolio.scss';
+@import 'footer.scss';
+
+
