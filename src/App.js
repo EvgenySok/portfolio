@@ -3,6 +3,7 @@ import About from './components/about/about.js';
 import Footer from './components/footer.js';
 import MainScreen from './components/mainScreen.js';
 import NavBar from './components/navBar.js';
+import Portfolio from './components/portfolio/portfolio.js';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <NavBar />
       <MainScreen />
       <About />
+      <Portfolio />
       <ContactForm />
       <Footer />
     </>

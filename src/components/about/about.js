@@ -4,8 +4,8 @@ import TextDiscription from './/textDiscription'
 
 const About = () => {
   return (
-    <div className="about">
-      <div id="about" className="container">
+    <div id="about" className="about">
+      <div className="container">
         <TextDiscription />
         <ScilsSlider />
       </div>

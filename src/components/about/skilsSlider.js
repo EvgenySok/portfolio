@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ItemsCarousel from 'react-items-carousel'
 import Media from 'react-media'
 
-import dataForSkilsSlider from './dataForSkilsSlider'
+import skilsData from './skilsData'
 
 const ScilsSlider = () => {
   const [activeItemIndex, setActiveItemIndex] = useState(0)
@@ -29,7 +29,7 @@ const ScilsSlider = () => {
             gutter={20}
             chevronWidth={chevronWidth}
           >
-            {dataForSkilsSlider.map(it => {
+            {skilsData.map(it => {
               return (
                 <div className="skils-block">
                   <it.svg/>
