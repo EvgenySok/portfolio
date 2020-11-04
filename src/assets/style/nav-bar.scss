@@ -4,11 +4,13 @@ nav {
   z-index: 1000;
   width: 100%;
   padding: 20px;
-  display: none;
+  // display: none;
+  opacity: 0;
+  visibility: hidden;
   -webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
   box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
-  transition: all 0.2s ease;
+  transition: all 0.8s ease 0s;
 
   ul li {
   float: left;
@@ -39,7 +41,9 @@ nav {
 }
 
 .on-navbar{
-   display: block;
+  //  display: block;
+   opacity: 1;
+   visibility: visible;
 }
 
 .nav-menu {

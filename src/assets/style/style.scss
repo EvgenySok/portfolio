@@ -1,13 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+$fontfamily: "Playfair Display";
+
+$minViewportWidth: 320;
+$maxViewportWidth: 1280; // for adaptive fs
+
 $decoration: #f56565;
 $mainColor: #292929;
 $textColor: #999999;
-
-body{
-  font-family: 'Playfair Display', serif;
-}
 
 .container {
   max-width: 1130px;
@@ -20,5 +21,6 @@ body{
 @import 'nav-bar.scss';
 @import 'portfolio.scss';
 @import 'footer.scss';
+@import  'nullstyle.scss';
 
 

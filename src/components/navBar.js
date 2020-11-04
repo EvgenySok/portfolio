@@ -7,7 +7,9 @@ const NavBar = () => {
     window.addEventListener('scroll', () => {
       setNavBar(window.pageYOffset)
     })
-  },[])
+  }, [])
+  console.log('onNavBar:', onNavBar)
+  
 
   return (
     <div>

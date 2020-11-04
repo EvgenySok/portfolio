@@ -23,7 +23,7 @@
     background-position: center;
     flex: 1 1 auto;
     min-height: 410px;
-    margin: -40px 0 0 60px;
+    margin: -80px 0 0 60px;
     width: 100%;
   }
 
@@ -73,5 +73,13 @@
   svg {
     color: $decoration;
     height: 44px;
+  }
+}
+
+#skils-slider {
+  & > div {
+    & > div {
+      overflow-y: hidden;
+    }
   }
 }
