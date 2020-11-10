@@ -8,8 +8,6 @@ const NavBar = () => {
       setNavBar(window.pageYOffset)
     })
   }, [])
-  console.log('onNavBar:', onNavBar)
-  
 
   return (
     <div>

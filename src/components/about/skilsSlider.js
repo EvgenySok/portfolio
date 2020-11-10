@@ -31,7 +31,7 @@ const ScilsSlider = () => {
           >
             {skilsData.map(it => {
               return (
-                <div className="skils-block">
+                <div className="skils-block" id={it.title}>
                   <it.svg/>
                   <span>{it.title}</span>
                   <p>{it.discription} </p>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './assets/style/style.scss'
 import About from './components/about/about.js';
+import Contact from './components/contact/contact';
 import MainScreen from './components/mainScreen.js';
 // import Footer from './components/footer.js';
 import NavBar from './components/navBar.js';
@@ -13,7 +14,7 @@ function App() {
       <MainScreen/>
       <About />
       <Portfolio />
-      {/* <ContactForm /> */}
+      <Contact />
       {/* <Footer /> */}
     </>
   )
