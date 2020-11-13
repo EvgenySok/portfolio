@@ -6,10 +6,10 @@ const NavBar = () => {
   const linkArray = ["home", "about", "portfolio", "blog", "contact"];
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setNavBar(window.pageYOffset);
-    });
-  }, []);
+    window.addEventListener('scroll', () => {
+      setNavBar(window.pageYOffset)
+    })
+  }, [])
 
   return (
     <div>
