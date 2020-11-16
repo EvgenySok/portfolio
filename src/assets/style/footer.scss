@@ -1,0 +1,16 @@
+.footer {
+  background-color: $bgColor;
+color: $textColor;
+  padding: 20px 0;
+}
+
+.footer__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .current-year {
+    
+    margin: 10px 0;
+  }
+}

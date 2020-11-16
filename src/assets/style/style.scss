@@ -12,6 +12,7 @@ $maxViewportWidth: 1280; // for adaptive fs
 $decoration: #f56565;
 $mainColor: #292929;
 $textColor: #999999;
+$bgColor: #fbfbfb;
 
 .container {
   max-width: 1130px;
@@ -25,6 +26,7 @@ $textColor: #999999;
 @import 'nav-bar.scss';
 @import 'portfolio.scss';
 @import 'footer.scss';
+@import 'social-list.scss';
 @import  'nullstyle.scss';
 @import 'journal.scss';
 @import 'post'

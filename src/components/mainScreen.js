@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import SocialBloc from "./socialBloc";
 
 const MainScreen = () => {
   const summaries = ["Ahroriddin Kodirov.", "Developeur.", "Freelancer."];
@@ -39,6 +40,7 @@ const MainScreen = () => {
           I'm <span>{changingText}</span>
         </h1>
         <p>designer, developeur, freelancer</p>
+        <SocialBloc/>
       </div>
     </div>
   );
