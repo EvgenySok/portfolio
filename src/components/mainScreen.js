@@ -3,11 +3,11 @@ import SocialBloc from "./socialBloc";
 
 const MainScreen = () => {
   const summaries = ["Ahroriddin Kodirov.", "Developeur.", "Freelancer."];
-  const ref = useRef(null);
 
   const [summerCurent, setSummerCurent] = useState(0);
   const [currentLeter, setCurrentLeter] = useState(-1);
   const [myTimeOut, setTimeOut] = useState(150);
+  const [changingText, setChengingText] = useState("");
 
   if (summerCurent > 2) {
     setSummerCurent(0);
@@ -16,8 +16,9 @@ const MainScreen = () => {
 
   const triker = () => {
     setCurrentLeter(currentLeter + 1);
-    ref.current.textContent =
-      summaries[summerCurent].substring(0, currentLeter + 1) + "|";
+    setChengingText(
+      summaries[summerCurent].substring(0, currentLeter + 1) + "|"
+    );
   };
 
   useEffect(() => {
@@ -25,7 +26,7 @@ const MainScreen = () => {
       setSummerCurent(summerCurent + 1);
       setCurrentLeter(-1);
       setTimeOut(800);
-    }else{
+    } else {
       setTimeOut(150);
       setTimeout(() => {
         triker();
@@ -36,7 +37,7 @@ const MainScreen = () => {
     <div className="main-screen">
       <div className="main-screen-item">
         <h1>
-          I'm <span className="typed" ref={ref}></span>
+          I'm <span>{changingText}</span>
         </h1>
         <p>designer, developeur, freelancer</p>
         <SocialBloc/>

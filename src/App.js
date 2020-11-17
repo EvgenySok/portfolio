@@ -6,6 +6,7 @@ import MainScreen from './components/mainScreen.js';
 import Footer from './components/footer.js';
 import NavBar from './components/navBar.js';
 import Portfolio from './components/portfolio/portfolio.js';
+import Journal from './components/journal/journal';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <MainScreen/>
       <About />
       <Portfolio />
+      <Journal/>
       <Contact />
       <Footer />
     </>
