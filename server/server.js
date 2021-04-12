@@ -10,7 +10,7 @@ const app = express()
 
 app.use(express.json()) // Parse json in request. Available in express 4.16+
 
-app.use(express.static(path.resolve(__dirname, "../public")))
+app.use(express.static(path.resolve(__dirname, "../build")))
 
 
 app.post("/api/send_email",
